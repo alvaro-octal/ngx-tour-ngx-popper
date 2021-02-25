@@ -1,4 +1,4 @@
-import { IStepOption } from 'ngx-tour-core';
+import { IStepOption } from '@ngx-tour/core';
 import { Placement, Trigger } from 'ngx-popper';
 
 export interface INgxpStepOption extends IStepOption {

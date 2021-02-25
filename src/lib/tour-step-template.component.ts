@@ -8,7 +8,7 @@ import {
   ViewEncapsulation,
   TemplateRef
 } from '@angular/core';
-import { IStepOption, TourHotkeyListenerComponent } from 'ngx-tour-core';
+import { IStepOption, TourHotkeyListenerComponent } from '@ngx-tour/core';
 import { PopperContent } from 'ngx-popper';
 import { NgxpTourService } from './ngx-popper-tour.service';
 import { TourStepTemplateService } from './tour-step-template.service';
