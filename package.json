@@ -1,38 +1,35 @@
 {
-  "name": "@ngx-tour/ngx-popper",
-  "version": "1.0.0",
-  "repository": "https://github.com/isaacplmann/ngx-tour.git",
-  "author": "Damien Murphy",
-  "license": "MIT",
-  "peerDependencies": {
-    "@angular/common": ">=7.0.0 <9.0.0",
-    "@angular/core": ">=7.0.0 <9.0.0",
-    "ngx-popper": "^2.0.1",
-    "ngx-tour-core": "^4.1.1"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0",
-    "withinviewport": "^2.0.0"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.5",
-    "@angular-devkit/build-ng-packagr": "~0.1000.5",
-    "@angular/cli": "^10.0.5",
-    "@angular/common": "^10.2.3",
-    "@angular/compiler": "^10.0.5",
-    "@angular/compiler-cli": "^10.0.5",
-    "@angular/core": "^10.2.3",
-    "@angular/router": "^10.2.3",
-    "@ngx-tour/core": "^1.0.0",
-    "cpx": "^1.5.0",
-    "ng-packagr": "^10.0.5",
-    "ngx-popper": "^7.0.0",
-    "popper.js": "^1.16.1",
-    "rxjs": "^6.6.3",
-    "typescript": "~3.9.7"
-  },
-  "scripts": {
-    "build": "ng build @ngx-tour/ngx-popper --prod && cpx CHANGELOG.md dist/",
-    "publish": "npm publish dist --access=public"
-  }
+    "name": "@ngx-tour/ngx-popper",
+    "version": "1.0.0",
+    "repository": "https://github.com/isaacplmann/ngx-tour.git",
+    "author": "Damien Murphy",
+    "license": "MIT",
+    "peerDependencies": {
+        "ngx-popper": "^2.0.1",
+        "ngx-tour-core": "^4.1.1"
+    },
+    "dependencies": {
+        "tslib": "^2.0.0",
+        "withinviewport": "^2.0.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "~0.1102.2",
+        "@angular/cli": "^11.2.2",
+        "@angular/common": "^11.2.3",
+        "@angular/compiler": "^11.2.3",
+        "@angular/compiler-cli": "^11.2.3",
+        "@angular/core": "^11.2.3",
+        "@angular/router": "^11.2.3",
+        "@ngx-tour/core": "^11.0.0",
+        "cpx": "^1.5.0",
+        "ng-packagr": "^11.2.4",
+        "ngx-popper": "^7.0.0",
+        "popper.js": "^1.16.1",
+        "rxjs": "^6.6.3",
+        "typescript": "~4.1.5"
+    },
+    "scripts": {
+        "build": "ng build @ngx-tour/ngx-popper --prod && cpx CHANGELOG.md dist/",
+        "publish": "npm publish dist --access=public"
+    }
 }
