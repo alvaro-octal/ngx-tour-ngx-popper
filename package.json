@@ -5,8 +5,8 @@
     "author": "Damien Murphy",
     "license": "MIT",
     "peerDependencies": {
-        "ngx-popper": "^2.0.1",
-        "ngx-tour-core": "^4.1.1"
+        "ngx-popper": "^7.0.0",
+        "@ngx-tour/core": "^11.0.0"
     },
     "dependencies": {
         "tslib": "^2.0.0",
