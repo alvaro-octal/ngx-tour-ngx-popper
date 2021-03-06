@@ -1,6 +1,6 @@
 # Ngx-Tour Ngx-Popper
-[![Dependency Status](https://david-dm.org/isaacplmann/ngx-tour-ngx-popper.svg)](https://david-dm.org/isaacplmann/ngx-tour-ngx-popper)
-[![devDependency Status](https://david-dm.org/isaacplmann/ngx-tour-ngx-popper/dev-status.svg)](https://david-dm.org/isaacplmann/ngx-tour-ngx-popper?type=dev)
+[![Dependency Status](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper.svg)](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper)
+[![devDependency Status](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper/dev-status.svg)](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper?type=dev)
 
 Check out the [documentation/demo page](https://isaacplmann.github.io/ngx-tour).
 
