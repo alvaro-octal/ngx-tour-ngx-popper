@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { NgxPopperModule } from 'ngx-popper';
+import { NgxPopperjsModule } from 'ngx-popperjs';
 import { TourService } from '@ngx-tour/core';
 
 import { TourAnchorNgxPopperDirective, TourAnchorNgxPopperPopoverDirective } from './tour-anchor.directive';
@@ -18,7 +18,7 @@ export {
 @NgModule({
     declarations: [TourAnchorNgxPopperDirective, TourAnchorNgxPopperPopoverDirective, TourStepTemplateComponent],
     exports: [TourAnchorNgxPopperDirective, TourAnchorNgxPopperPopoverDirective, TourStepTemplateComponent],
-    imports: [CommonModule, NgxPopperModule.forRoot()]
+    imports: [CommonModule, NgxPopperjsModule.forRoot()]
 })
 export class TourNgxPopperModule {
     public static forRoot(): ModuleWithProviders<TourNgxPopperModule> {

@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Host, HostBinding, Input } from "@angular/core";
 import type { OnDestroy, OnInit } from "@angular/core";
-import { PopperController, Placements, Triggers } from "ngx-popper";
+import { NgxPopperjsDirective, NgxPopperjsPlacements, NgxPopperjsTriggers } from "ngx-popperjs";
 import { TourAnchorDirective } from "@ngx-tour/core";
 import withinviewport from "withinviewport";
 
@@ -10,7 +10,7 @@ import { INgxpStepOption as IStepOption } from "./step-option.interface";
 
 @Directive({ selector: "[tourAnchor]" })
 export class TourAnchorNgxPopperPopoverDirective
-  extends PopperController
+  extends NgxPopperjsDirective
   implements OnInit {
   // Overwrite parent ngOnInit to do nothing since the content property isn't set yet.
   ngOnInit() {}
@@ -55,8 +55,8 @@ export class TourAnchorNgxPopperDirective
 
     this.popoverDirective.content = this.tourStepTemplate.template;
     this.popoverDirective.targetElement = this.element.nativeElement;
-    this.popoverDirective.placement = step.placement || Placements.Auto;
-    this.popoverDirective.showTrigger = Triggers.NONE;
+    this.popoverDirective.placement = step.placement || NgxPopperjsPlacements.AUTO;
+    this.popoverDirective.showTrigger = NgxPopperjsTriggers.none;
 
     if (step.popperSettings) {
       this.popoverDirective.boundariesElement =
@@ -81,7 +81,7 @@ export class TourAnchorNgxPopperDirective
       this.popoverDirective.showOnStart =
         step.popperSettings.showOnStart || false;
       this.popoverDirective.showTrigger =
-        step.popperSettings.showTrigger || Triggers.NONE;
+        step.popperSettings.showTrigger || NgxPopperjsTriggers.none;
       this.popoverDirective.timeoutAfterShow =
         step.popperSettings.timeoutAfterShow || 0;
 
