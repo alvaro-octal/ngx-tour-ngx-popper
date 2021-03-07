@@ -7,5 +7,6 @@ export { NgxpTourService as TourService } from './lib/ngx-popper-tour.service';
 export {
   TourNgxPopperModule,
   TourAnchorNgxPopperDirective,
+  TourAnchorNgxPopperPopoverDirective,
   TourStepTemplateComponent
 } from './lib/ngx-popper.module';
