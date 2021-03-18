@@ -55,7 +55,9 @@ export class TourAnchorNgxPopperDirective
 
     this.popoverDirective.content = this.tourStepTemplate.template;
     this.popoverDirective.targetElement = this.element.nativeElement;
-    this.popoverDirective.placement = step.placement || NgxPopperjsPlacements.AUTO;
+    this.popoverDirective.placement = <NgxPopperjsPlacements>(
+        (step.placement || NgxPopperjsPlacements.AUTO)
+    );
     this.popoverDirective.showTrigger = NgxPopperjsTriggers.none;
 
     if (step.popperSettings) {

@@ -2,7 +2,23 @@ import { IStepOption } from '@ngx-tour/core';
 import { NgxPopperjsPlacements, NgxPopperjsTriggers } from 'ngx-popperjs';
 
 export interface INgxpStepOption extends IStepOption {
-    placement?: NgxPopperjsPlacements;
+    placement?:
+        | NgxPopperjsPlacements
+        | 'top'
+        | 'bottom'
+        | 'left'
+        | 'right'
+        | 'top-start'
+        | 'bottom-start'
+        | 'left-start'
+        | 'right-start'
+        | 'top-end'
+        | 'bottom-end'
+        | 'left-end'
+        | 'right-end'
+        | 'auto'
+        | 'auto-start'
+        | 'auto-end';
     popperSettings?:{
         boundariesElement?: string;
         closeOnClickOutside?: boolean;
