@@ -1,3 +1,10 @@
+## [11.0.4](https://github.com/alvaro-octal/ngx-tour-ngx-popper/compare/v11.0.3...v11.0.4) (2021-03-18)
+
+
+### Fix
+
+* Release Script ([0afcd56](https://github.com/alvaro-octal/ngx-tour-ngx-popper/commit/0afcd56e71a35a3d82872c8b07e9c07c2afc0ad2))
+
 <a name="4.1.1"></a>
 
 # [4.1.1](https://github.com/isaacplmann/ngx-tour) (2019-12-07)
