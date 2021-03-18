@@ -1,4 +1,5 @@
-# Ngx-Tour Ngx-Popper
+# @ngx-tour/ngx-popper
+[![npm version](https://badge.fury.io/js/%40ngx-tour%2Fngx-popper.svg)](https://badge.fury.io/js/%40ngx-tour%2Fngx-popper)
 [![Dependency Status](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper.svg)](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper)
 [![devDependency Status](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper/dev-status.svg)](https://david-dm.org/alvaro-octal/ngx-tour-ngx-popper?type=dev)
 
