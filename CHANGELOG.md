@@ -1,3 +1,10 @@
+# [11.1.0](https://github.com/alvaro-octal/ngx-tour-ngx-popper/compare/v11.0.4...v11.1.0) (2021-03-23)
+
+
+### Update
+
+* improved template ([88e9cf5](https://github.com/alvaro-octal/ngx-tour-ngx-popper/commit/88e9cf557cab0290446576298736a495df33207b))
+
 ## [11.0.4](https://github.com/alvaro-octal/ngx-tour-ngx-popper/compare/v11.0.3...v11.0.4) (2021-03-18)
 
 
