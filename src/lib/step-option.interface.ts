@@ -29,14 +29,10 @@ export interface INgxpStepOption extends IStepOption {
         hideOnClickOutside?: boolean;
         hideOnScroll?: boolean;
         hideTimeout?: number;
-        popperModifiers?: any;
-        popperOnHidden?: any;
-        popperOnShown?: any;
         positionFixed?: boolean;
         showDelay?: number;
         showOnStart?: boolean;
         showTrigger?: NgxPopperjsTriggers;
-        targetElement?: HTMLElement;
         timeoutAfterShow?: number;
     }
 }

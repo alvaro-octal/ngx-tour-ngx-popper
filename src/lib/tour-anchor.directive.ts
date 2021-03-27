@@ -58,7 +58,6 @@ export class TourAnchorNgxPopperDirective
     this.popoverDirective.placement = <NgxPopperjsPlacements>(
         (step.placement || NgxPopperjsPlacements.AUTO)
     );
-    this.popoverDirective.showTrigger = NgxPopperjsTriggers.none;
 
     if (step.popperSettings) {
       this.popoverDirective.boundariesElement =
@@ -86,11 +85,6 @@ export class TourAnchorNgxPopperDirective
         step.popperSettings.showTrigger || NgxPopperjsTriggers.none;
       this.popoverDirective.timeoutAfterShow =
         step.popperSettings.timeoutAfterShow || 0;
-
-      //TODO: Can these even get passed in via json?
-      // this.popoverDirective.popperModifiers = step.popperSettings.popperModifiers || undefined;
-      // this.popoverDirective.popperOnHidden = step.popperSettings.popperOnHidden || undefined;
-      // this.popoverDirective.popperOnShown = step.popperSettings.popperOnShown || undefined;
     }
 
     this.popoverDirective.initialize();
