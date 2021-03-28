@@ -19,6 +19,8 @@ export interface INgxpStepOption extends IStepOption {
         | 'auto'
         | 'auto-start'
         | 'auto-end';
+    enableBackdrop?: boolean;
+    backdropZIndex?: number;
     popperSettings?:{
         boundariesElement?: string;
         closeOnClickOutside?: boolean;

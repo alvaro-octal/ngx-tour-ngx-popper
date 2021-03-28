@@ -7,6 +7,7 @@ import withinviewport from "withinviewport";
 import { NgxpTourService } from "./ngx-popper-tour.service";
 import { TourStepTemplateService } from "./tour-step-template.service";
 import { INgxpStepOption as IStepOption } from "./step-option.interface";
+import { TourBackdropService } from './tour-backdrop.service';
 
 @Directive({ selector: "[tourAnchor]" })
 export class TourAnchorNgxPopperPopoverDirective
@@ -35,7 +36,8 @@ export class TourAnchorNgxPopperDirective
     private tourService: NgxpTourService,
     private tourStepTemplate: TourStepTemplateService,
     private element: ElementRef,
-    @Host() private popoverDirective: TourAnchorNgxPopperPopoverDirective
+    @Host() private popoverDirective: TourAnchorNgxPopperPopoverDirective,
+    private tourBackdrop: TourBackdropService
   ) {}
 
   public ngOnInit(): void {
@@ -106,10 +108,17 @@ export class TourAnchorNgxPopperDirective
         (<HTMLElement>this.element.nativeElement).scrollIntoView(true);
       }
     }
+
+    if (step.enableBackdrop) {
+        this.tourBackdrop.show(this.element, step.backdropZIndex);
+    } else {
+        this.tourBackdrop.close();
+    }
   }
 
   public hideTourStep(): void {
     this.isActive = false;
     this.popoverDirective.hide();
+    this.tourBackdrop.close();
   }
 }

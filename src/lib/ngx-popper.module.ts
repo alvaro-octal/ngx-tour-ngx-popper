@@ -7,6 +7,7 @@ import { TourAnchorNgxPopperDirective, TourAnchorNgxPopperPopoverDirective } fro
 import { TourStepTemplateComponent } from './tour-step-template.component';
 import { TourStepTemplateService } from './tour-step-template.service';
 import { NgxpTourService } from './ngx-popper-tour.service';
+import { TourBackdropService } from './tour-backdrop.service';
 
 export {
     TourAnchorNgxPopperDirective,
@@ -24,7 +25,7 @@ export class TourNgxPopperModule {
     public static forRoot(): ModuleWithProviders<TourNgxPopperModule> {
         return {
             ngModule: TourNgxPopperModule,
-            providers: [TourStepTemplateService, TourService, NgxpTourService]
+            providers: [TourStepTemplateService, TourService, NgxpTourService, TourBackdropService]
         };
     }
 }
