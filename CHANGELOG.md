@@ -1,3 +1,10 @@
+# [11.2.0](https://github.com/alvaro-octal/ngx-tour-ngx-popper/compare/v11.1.0...v11.2.0) (2021-03-28)
+
+
+### New
+
+* Add backdrop zindex ([89b3350](https://github.com/alvaro-octal/ngx-tour-ngx-popper/commit/89b33504c9d2e9b6726d20a96dd4d462348bc421))
+
 # [11.1.0](https://github.com/alvaro-octal/ngx-tour-ngx-popper/compare/v11.0.4...v11.1.0) (2021-03-23)
 
 
