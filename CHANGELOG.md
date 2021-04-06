@@ -1,3 +1,14 @@
+## [11.2.1](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.2.0...v11.2.1) (2021-04-06)
+
+
+### Fix
+
+* update peer dependencies ([f371322](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/f3713222eba7fa1af9df7edfbc32e7f62adae249))
+
+### Minor
+
+* Change ownership ([8ef365c](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/8ef365cc7fd8e89be6b5490b6439c8ffd70d0c94))
+
 # [11.2.0](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.1.0...v11.2.0) (2021-03-28)
 
 ### New
