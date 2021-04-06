@@ -6,7 +6,7 @@ import {
   Input,
   ViewChild,
   ViewEncapsulation,
-  TemplateRef
+  TemplateRef,
 } from '@angular/core';
 import { IStepOption, TourHotkeyListenerComponent } from '@ngx-tour/core';
 import { NgxPopperjsContentComponent } from 'ngx-popperjs';
@@ -18,7 +18,12 @@ import { TourStepTemplateService } from './tour-step-template.service';
   selector: 'tour-step-template',
   template: `
     <popper-content class="popper-content">
-      <ng-container *ngTemplateOutlet="stepTemplate || stepTemplateContent || defaultTemplate;context: { step: step }">
+      <ng-container
+        *ngTemplateOutlet="
+          stepTemplate || stepTemplateContent || defaultTemplate;
+          context: { step: step }
+        "
+      >
       </ng-container>
     </popper-content>
 
@@ -26,20 +31,29 @@ import { TourStepTemplateService } from './tour-step-template.service';
       <p class="ngxp-title">{{ step?.title }}</p>
       <p class="ngxp-content">{{ step?.content }}</p>
       <div class="tour-step-navigation">
-        <button [hidden]="!tourService.hasPrev(step)" class="btn btn-sm btn-primary" (click)="tourService.prev()">
-          {{ step?.prevBtnTitle }}
-        </button>&nbsp;
-        <button [hidden]="!tourService.hasNext(step)" class="btn btn-sm btn-primary" (click)="tourService.next()">
-          {{ step?.nextBtnTitle }}
-        </button>&nbsp;
+        <button
+          [hidden]="!tourService.hasPrev(step)"
+          class="btn btn-sm btn-primary"
+          (click)="tourService.prev()"
+        >
+          {{ step?.prevBtnTitle }}</button
+        >&nbsp;
+        <button
+          [hidden]="!tourService.hasNext(step)"
+          class="btn btn-sm btn-primary"
+          (click)="tourService.next()"
+        >
+          {{ step?.nextBtnTitle }}</button
+        >&nbsp;
         <button class="btn btn-sm btn-primary" (click)="tourService.end()">
           {{ step?.endBtnTitle }}
         </button>
       </div>
     </ng-template>
-  `
+  `,
 })
-export class TourStepTemplateComponent extends TourHotkeyListenerComponent
+export class TourStepTemplateComponent
+  extends TourHotkeyListenerComponent
   implements AfterViewInit, AfterContentInit {
   @ViewChild(NgxPopperjsContentComponent, { static: true })
   public popperContent: NgxPopperjsContentComponent;

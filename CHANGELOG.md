@@ -2,19 +2,19 @@
 
 ### New
 
--   Add backdrop zindex ([89b3350](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/89b33504c9d2e9b6726d20a96dd4d462348bc421))
+- Add backdrop zindex ([89b3350](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/89b33504c9d2e9b6726d20a96dd4d462348bc421))
 
 # [11.1.0](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.0.4...v11.1.0) (2021-03-23)
 
 ### Update
 
--   improved template ([88e9cf5](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/88e9cf557cab0290446576298736a495df33207b))
+- improved template ([88e9cf5](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/88e9cf557cab0290446576298736a495df33207b))
 
 ## [11.0.4](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.0.3...v11.0.4) (2021-03-18)
 
 ### Fix
 
--   Release Script ([0afcd56](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/0afcd56e71a35a3d82872c8b07e9c07c2afc0ad2))
+- Release Script ([0afcd56](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/0afcd56e71a35a3d82872c8b07e9c07c2afc0ad2))
 
 <a name="4.1.1"></a>
 
@@ -22,7 +22,7 @@
 
 ### Fixes
 
--   Skip undefined tourAnchors
+- Skip undefined tourAnchors
 
 <a name="4.1.0"></a>
 
@@ -30,8 +30,8 @@
 
 ### Features
 
--   Support Angular 8 as peer dependency
--   Support Ivy renderer
+- Support Angular 8 as peer dependency
+- Support Ivy renderer
 
 <a name="4.0.1"></a>
 
@@ -39,7 +39,7 @@
 
 ### Fixes
 
--   NavigationStart only hide currentStep if route is specified eg. routing used
+- NavigationStart only hide currentStep if route is specified eg. routing used
 
 <a name="4.0.0"></a>
 
@@ -47,7 +47,7 @@
 
 ### BREAKING CHANGES
 
--   Require Angular 7 as peer dependency
+- Require Angular 7 as peer dependency
 
 <a name="3.0.2"></a>
 
@@ -55,7 +55,7 @@
 
 ### Bug Fixes
 
--   Respect showDelay setting
+- Respect showDelay setting
 
 <a name="3.0.1"></a>
 
@@ -63,7 +63,7 @@
 
 ### Bug Fixes
 
--   Include styles.css in the npm package
+- Include styles.css in the npm package
 
 <a name="3.0.0"></a>
 
@@ -71,7 +71,7 @@
 
 ### BREAKING CHANGES
 
--   Require Angular 6 as peer dependency
+- Require Angular 6 as peer dependency
 
 <a name="2.0.0"></a>
 

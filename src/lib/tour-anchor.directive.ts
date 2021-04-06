@@ -1,15 +1,19 @@
-import { Directive, ElementRef, Host, HostBinding, Input } from "@angular/core";
-import type { OnDestroy, OnInit } from "@angular/core";
-import { NgxPopperjsDirective, NgxPopperjsPlacements, NgxPopperjsTriggers } from "ngx-popperjs";
-import { TourAnchorDirective } from "@ngx-tour/core";
-import withinviewport from "withinviewport";
+import { Directive, ElementRef, Host, HostBinding, Input } from '@angular/core';
+import type { OnDestroy, OnInit } from '@angular/core';
+import {
+  NgxPopperjsDirective,
+  NgxPopperjsPlacements,
+  NgxPopperjsTriggers,
+} from 'ngx-popperjs';
+import { TourAnchorDirective } from '@ngx-tour/core';
+import withinviewport from 'withinviewport';
 
-import { NgxpTourService } from "./ngx-popper-tour.service";
-import { TourStepTemplateService } from "./tour-step-template.service";
-import { INgxpStepOption as IStepOption } from "./step-option.interface";
+import { NgxpTourService } from './ngx-popper-tour.service';
+import { TourStepTemplateService } from './tour-step-template.service';
+import { INgxpStepOption as IStepOption } from './step-option.interface';
 import { TourBackdropService } from './tour-backdrop.service';
 
-@Directive({ selector: "[tourAnchor]" })
+@Directive({ selector: '[tourAnchor]' })
 export class TourAnchorNgxPopperPopoverDirective
   extends NgxPopperjsDirective
   implements OnInit {
@@ -23,13 +27,13 @@ export class TourAnchorNgxPopperPopoverDirective
 }
 
 @Directive({
-  selector: "[tourAnchor]",
+  selector: '[tourAnchor]',
 })
 export class TourAnchorNgxPopperDirective
   implements OnInit, OnDestroy, TourAnchorDirective {
   @Input() public tourAnchor: string;
 
-  @HostBinding("class.touranchor--is-active")
+  @HostBinding('class.touranchor--is-active')
   public isActive: boolean;
 
   constructor(
@@ -51,15 +55,14 @@ export class TourAnchorNgxPopperDirective
   public showTourStep(step: IStepOption): void {
     this.isActive = true;
     this.tourStepTemplate.templateComponent.step = step;
-    step.prevBtnTitle = step.prevBtnTitle || "Prev";
-    step.nextBtnTitle = step.nextBtnTitle || "Next";
-    step.endBtnTitle = step.endBtnTitle || "End";
+    step.prevBtnTitle = step.prevBtnTitle || 'Prev';
+    step.nextBtnTitle = step.nextBtnTitle || 'Next';
+    step.endBtnTitle = step.endBtnTitle || 'End';
 
     this.popoverDirective.content = this.tourStepTemplate.template;
     this.popoverDirective.targetElement = this.element.nativeElement;
-    this.popoverDirective.placement = <NgxPopperjsPlacements>(
-        (step.placement || NgxPopperjsPlacements.AUTO)
-    );
+    this.popoverDirective.placement = (step.placement ||
+      NgxPopperjsPlacements.AUTO) as NgxPopperjsPlacements;
 
     if (step.popperSettings) {
       this.popoverDirective.boundariesElement =
@@ -71,7 +74,7 @@ export class TourAnchorNgxPopperDirective
       this.popoverDirective.disabled = step.popperSettings.disabled || false;
       this.popoverDirective.disableStyle =
         step.popperSettings.disableStyle || false;
-      this.popoverDirective["forceDetection"] =
+      this.popoverDirective['forceDetection'] =
         step.popperSettings.forceDetection || false;
       this.popoverDirective.hideOnClickOutside =
         step.popperSettings.hideOnClickOutside || false;
@@ -91,8 +94,8 @@ export class TourAnchorNgxPopperDirective
 
     this.popoverDirective.initialize();
     if (
-      step.hasOwnProperty("popperSettings") &&
-      step.popperSettings.hasOwnProperty("showDelay")
+      step.hasOwnProperty('popperSettings') &&
+      step.popperSettings.hasOwnProperty('showDelay')
     ) {
       this.popoverDirective.scheduledShow();
     } else {
@@ -100,19 +103,19 @@ export class TourAnchorNgxPopperDirective
     }
 
     if (!step.preventScrolling) {
-      if (!withinviewport(this.element.nativeElement, { sides: "bottom" })) {
-        (<HTMLElement>this.element.nativeElement).scrollIntoView(false);
+      if (!withinviewport(this.element.nativeElement, { sides: 'bottom' })) {
+        (this.element.nativeElement as HTMLElement).scrollIntoView(false);
       } else if (
-        !withinviewport(this.element.nativeElement, { sides: "left top right" })
+        !withinviewport(this.element.nativeElement, { sides: 'left top right' })
       ) {
-        (<HTMLElement>this.element.nativeElement).scrollIntoView(true);
+        (this.element.nativeElement as HTMLElement).scrollIntoView(true);
       }
     }
 
     if (step.enableBackdrop) {
-        this.tourBackdrop.show(this.element, step.backdropZIndex);
+      this.tourBackdrop.show(this.element, step.backdropZIndex);
     } else {
-        this.tourBackdrop.close();
+      this.tourBackdrop.close();
     }
   }
 

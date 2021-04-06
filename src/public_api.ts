@@ -8,5 +8,5 @@ export {
   TourNgxPopperModule,
   TourAnchorNgxPopperDirective,
   TourAnchorNgxPopperPopoverDirective,
-  TourStepTemplateComponent
+  TourStepTemplateComponent,
 } from './lib/ngx-popper.module';
