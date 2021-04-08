@@ -1,3 +1,10 @@
+## [11.2.2](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.2.1...v11.2.2) (2021-04-08)
+
+
+### Fix
+
+* update @ngx-tour/core and use innerHTML tag for content ([7b58045](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/7b58045bca1814a325fa554639c853be6a8511f1))
+
 ## [11.2.1](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.2.0...v11.2.1) (2021-04-06)
 
 
