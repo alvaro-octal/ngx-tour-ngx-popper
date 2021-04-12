@@ -1,3 +1,10 @@
+# [11.3.0](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.2.2...v11.3.0) (2021-04-12)
+
+
+### Chore
+
+* Update dependencies ([c9ee884](https://github.com/ngx-tour/ngx-tour-ngx-popper/commit/c9ee884247cd2cbd7d1af02891200bba968ceea0))
+
 ## [11.2.2](https://github.com/ngx-tour/ngx-tour-ngx-popper/compare/v11.2.1...v11.2.2) (2021-04-08)
 
 
